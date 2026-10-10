@@ -33,6 +33,17 @@ Excel (Power Query, formulas, Solver, Data Tables)
 ## Key assumptions
 [Fill in once decided: revenue per customer, loss on default, etc.]
 
+## Data cleaning log
+- Loaded 30,000 rows and 25 columns (header was in row 2 of the source file)
+- Renamed PAY_0 to PAY_1 and "default payment next month" to DEFAULT
+- Checks: 0 blank cells, 0 duplicate IDs (IDs 1 to 30,000, sum verified)
+- EDUCATION: codes 0, 5, 6 were not in the documented categories
+  ([x] rows total), grouped into 4 (others); code 4 now has 468 rows
+- MARRIAGE: code 0 was undocumented ([x] rows), grouped into 3
+  (others); code 3 now has 377 rows
+- Negative bill amounts kept (could be credit balances)
+- Final: 30,000 rows
+
 ## Results
 [Fill in after analysis]
 
