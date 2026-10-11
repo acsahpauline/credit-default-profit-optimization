@@ -44,6 +44,13 @@ Excel (Power Query, formulas, Solver, Data Tables)
 - Negative bill amounts kept (could be credit balances)
 - Final: 30,000 rows
 
+## Validation
+- Segment default rates were estimated on the Train set (20,892 customers)
+  and checked on the held-out Test set (9,108 customers)
+- Total predicted Test defaults: 2,015; actual: 1,984 (1.6% difference)
+- Risk ordering held in every PAY band; largest gaps were in the
+  2+ months late segments (S7, S8), which are high-risk in both sets
+
 ## Results
 [Fill in after analysis]
 
